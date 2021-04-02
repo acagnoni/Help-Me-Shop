@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
+import MySignIn from '../components/SignIn'
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -11,9 +12,16 @@ import pic04 from '../assets/images/pic04.jpg'
 import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
 
-class HomeIndex extends React.Component {
-    render() {
+import { withAuthenticator } from 'aws-amplify-react'
 
+
+
+class HomeIndex extends React.Component {
+
+    
+
+    render() {
+        
         return (
             <Layout>
                 <Helmet
@@ -90,4 +98,6 @@ class HomeIndex extends React.Component {
     }
 }
 
-export default HomeIndex
+export default withAuthenticator(HomeIndex, false, [
+    <MySignIn/>
+  ])

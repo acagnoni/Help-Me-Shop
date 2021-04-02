@@ -1,0 +1,15 @@
+{
+  "appId": "com.helpmeshop",
+  "appName": "Help Me Shop",
+  "bundledWebRuntime": false,
+  "linuxAndroidStudioPath": "/home/andrea/android-studio-ide/bin/studio.sh",
+  "npmClient": "npm",
+  "webDir": "public",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
+

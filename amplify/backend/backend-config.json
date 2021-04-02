@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "helpmeshopa3430cfd": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
